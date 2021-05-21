@@ -1,0 +1,338 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+section {
+    background-color: white;
+}
+
+/* HEADER */
+.header {
+    /* background:#1c1d25; */
+    background: rgb(28,29,37);
+    background: linear-gradient(180deg, rgba(28,29,37,1) 23%, rgba(57,59,75,1) 76%, rgba(57,59,75,1) 100%);
+    height: 100vh;
+    color: white;
+}
+    .header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+        .header nav ul {
+            list-style: none;
+            display: flex;
+            width: 500px;
+            justify-content: space-around;
+            font-size: 30px;
+        }
+            .header nav ul li {
+                /* width: 200px; */
+                text-decoration: none;
+            }
+    .header h1 {
+        font-size:60px;
+        margin:0;
+    }
+    .header p {
+        font-size:30px;
+        font-weight: 300;
+        margin:0;
+    }
+
+.header ul li a {
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+}
+.header ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+    color: rgb(189, 189, 189);
+}
+.header-area {
+    display:flex;
+    flex-wrap: nowrap;
+    height:100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-text {
+    margin-left: 80px;
+    margin-bottom: 100px;
+}
+.button {
+    width:180px;
+    height:50px;
+    border-radius: 20px;
+    line-height: 50px;
+    text-align: center;
+    background: rgb(98, 27, 165);
+    font-size:20px;
+    font-weight: 300;
+    margin-top:20px;
+    cursor:inherit;
+}
+.button:hover {
+    background:rgb(155, 91, 214);
+}
+.button:active {
+    background: rgb(46, 2, 87);
+    color: rgb(182, 182, 182);
+}
+.socials {
+    /* display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap; */
+    padding-bottom: 200px;
+    /* border: solid 1px white; */
+}
+.social-icon {
+    margin: 15px;
+}
+.logo {
+    height:80px;
+    margin: 30px;
+}
+
+/* MAIN SECTION */
+.sub-section {
+    background-color: #cccccc;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+    .sub-section h2 {
+        font-size:40px;
+        margin:0;
+    }
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    padding: 80px;
+}
+    .sub-section-alternative h2 {
+        font-size:40px;
+    }
+
+.container {
+    background: grey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.headshot {
+    width:300px;
+    border-radius: 150px;
+    border: 5px solid rgb(46, 2, 87);
+}
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+.project-card {
+    width:200px;
+    height:500px;
+    box-shadow: 2px 2px 20px rgb(160, 160, 160);
+    margin:10px;
+}
+.project-card  hr {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.subtext {
+    font-size:15px;
+    font-weight: 300;
+}
+.project-image {
+    margin-top: 25px;
+    width:190px;
+    border-radius:150px;
+    border: solid 2px rgb(98, 27, 165);;
+}
+.project-link {
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(98, 27, 165);
+}
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+.footer {
+    background:black;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+    padding: 80px 80px 20px 80px;
+}
+    .footer h2 {
+        font-size:40px;
+        margin:0;
+    }
+.footer-container {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.footer-section {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.footer-section h3 {
+    font-size: 30px;
+}
+.footer-section ul {
+    list-style: none;
+}
+.footer-section ul li a {
+    color: grey;
+    font-size: 2em;
+}
+.footer-section ul li a:hover {
+    color: white;
+}
+.footer-section button {
+    background: rgb(98, 27, 165);
+    color: white;
+    padding:10px;
+    display: block;
+    margin: 5px;
+    width: 100px;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+.footer-section button:hover {
+    background: rgb(89, 27, 146);
+}
+.copy {
+    margin-top:40px;
+}
+
+input[type="text"] {
+    background:rgb(214, 214, 214);
+    width: 100%;
+    padding:10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+textarea {
+    background:rgb(214, 214, 214);
+    padding:10px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.hamburger {
+    display: none;
+}
+.hamburger:focus {
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project-card {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .hamburger {
+        display: block;
+        border:0;
+        background-color: transparent ;
+        color: white;
+        font-size:30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+    .header nav ul {
+       display:none;
+       background-color: #2b2c38;
+       margin: 0px;
+    }
+    .header nav ul.show {
+        display:block;
+        width: 60%;
+    }
+    .header nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:500px) {
+    .hamburger {
+        display: block;
+        border:0;
+        background-color: transparent ;
+        color: white;
+        font-size:30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+    .header nav ul {
+       display:none;
+       background-color: #2b2c38;
+       margin: 0px;
+    }
+    .header h1 {
+        font-size:40px;
+        margin:0;
+    }
+    .header-text {
+        margin-left: 30px;
+        margin-bottom: 100px;
+    }
+    .header nav ul.show {
+        display:block;
+        width: 60%;
+    }
+    .header nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+    .logo {
+        display: none;
+    }
+
+    .sub-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+        padding: 40px;
+    }
+        .sub-section h2 {
+            font-size:40px;
+            margin:0;
+        }
+    .headshot {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width:300px;
+        border-radius: 150px;
+        margin: auto;
+    }
+}
